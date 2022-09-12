@@ -1,16 +1,19 @@
 package ru.job4j.dreamjob.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Post {
+public class Post implements Serializable {
     private int id;
     private String name;
+    private boolean visible;
 
     public Post() { }
 
     public Post(int id, String name) {
         this.id = id;
         this.name = name;
+        this.visible = false;
     }
 
     public int getId() {
@@ -27,6 +30,14 @@ public class Post {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isVisible() {
+        return visible;
+    }
+
+    public void setVisible(boolean visible) {
+        this.visible = visible;
     }
 
     @Override
