@@ -18,7 +18,6 @@ public class Candidate implements Serializable {
         this.name = name;
         this.desc = desc;
         this.created = created;
-        this.visible = false;
     }
 
     public int getId() {

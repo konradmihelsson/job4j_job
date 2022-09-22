@@ -45,6 +45,7 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Имя</th>
+                <th scope="col">Город</th>
             </tr>
             </thead>
             <tbody>
@@ -61,6 +62,9 @@
                     <span th:if="${!post.visible}">
                         <i class="fa fa-square-o"></i>
                     </span>
+                </td>
+                <td>
+                    <span th:text="*{post.city != null}? *{post.city.name} : '(no city specified)'"></span>
                 </td>
             </tr>
             </tbody>
