@@ -10,6 +10,7 @@ public class Candidate implements Serializable {
     private String desc;
     private Date created;
     private boolean visible;
+    private byte[] photo;
 
     public Candidate() { }
 
@@ -58,6 +59,14 @@ public class Candidate implements Serializable {
 
     public void setVisible(boolean visible) {
         this.visible = visible;
+    }
+
+    public byte[] getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(byte[] photo) {
+        this.photo = photo;
     }
 
     @Override

@@ -33,4 +33,8 @@ public class CandidateService {
     public Candidate findById(int id) {
         return this.store.findById(id);
     }
+
+    public Candidate getById(Integer candidateId) {
+        return this.store.getById(candidateId);
+    }
 }
