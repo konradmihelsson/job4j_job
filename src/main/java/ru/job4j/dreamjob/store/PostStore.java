@@ -30,4 +30,12 @@ public class PostStore {
         post.setId(ids.incrementAndGet());
         posts.put(post.getId(), post);
     }
+
+    public void update(Post post) {
+        posts.replace(post.getId(), post);
+    }
+
+    public Post findById(int id) {
+        return posts.get(id);
+    }
 }

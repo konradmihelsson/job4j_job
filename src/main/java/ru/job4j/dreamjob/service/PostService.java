@@ -25,4 +25,12 @@ public class PostService {
     public void add(Post post) {
         this.store.add(post);
     }
+
+    public void update(Post post) {
+        this.store.update(post);
+    }
+
+    public Post findById(int id) {
+        return this.store.findById(id);
+    }
 }
