@@ -25,4 +25,12 @@ public class CandidateService {
     public void add(Candidate candidate) {
         this.store.add(candidate);
     }
+
+    public void update(Candidate candidate) {
+        this.store.update(candidate);
+    }
+
+    public Candidate findById(int id) {
+        return this.store.findById(id);
+    }
 }

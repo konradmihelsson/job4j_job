@@ -32,4 +32,12 @@ public class CandidateStore {
         candidate.setCreated(new Date());
         candidates.put(candidate.getId(), candidate);
     }
+
+    public void update(Candidate candidate) {
+        this.candidates.replace(candidate.getId(), candidate);
+    }
+
+    public Candidate findById(int id) {
+        return this.candidates.get(id);
+    }
 }
