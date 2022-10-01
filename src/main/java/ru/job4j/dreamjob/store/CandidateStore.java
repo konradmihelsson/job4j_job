@@ -40,8 +40,4 @@ public class CandidateStore {
     public Candidate findById(int id) {
         return this.candidates.get(id);
     }
-
-    public Candidate getById(Integer candidateId) {
-        return this.candidates.get(candidateId);
-    }
 }

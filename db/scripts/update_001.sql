@@ -5,3 +5,12 @@ CREATE TABLE posts
     visible BOOLEAN,
     city_id INT
 );
+CREATE TABLE candidates
+(
+    id          SERIAL PRIMARY KEY,
+    name        TEXT,
+    description TEXT,
+    created     TIMESTAMP default localtimestamp,
+    visible     BOOLEAN,
+    photo       BYTEA
+);
