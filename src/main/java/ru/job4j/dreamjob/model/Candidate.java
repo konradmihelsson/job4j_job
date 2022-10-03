@@ -12,7 +12,14 @@ public class Candidate implements Serializable {
     private boolean visible;
     private byte[] photo;
 
-    public Candidate() { }
+    public Candidate() {
+    }
+
+    public Candidate(int id, String name, String desc) {
+        this.id = id;
+        this.name = name;
+        this.desc = desc;
+    }
 
     public Candidate(int id, String name, String desc, Date created) {
         this.id = id;
