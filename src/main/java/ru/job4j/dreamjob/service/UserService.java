@@ -24,4 +24,8 @@ public class UserService {
     public Optional<User> add(User user) {
         return this.store.add(user);
     }
+
+    public Optional<User> findUserByEmailAndPwd(String email, String password) {
+        return this.store.findUserByEmailAndPwd(email, password);
+    }
 }
